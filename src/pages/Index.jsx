@@ -64,7 +64,7 @@ const Index = () => {
               Get in Touch
             </Heading>
             <Box bg="gray.800" p={8} borderRadius="lg">
-              <Stack spacing={6} as="form">
+              <Stack spacing={6} as="form" onSubmit={(e) => e.preventDefault()}>
                 <FormControl isRequired>
                   <FormLabel color="white">Name</FormLabel>
                   <Input placeholder="Your name" bg="gray.700" />
