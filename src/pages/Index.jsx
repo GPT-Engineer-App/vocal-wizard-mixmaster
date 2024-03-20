@@ -78,19 +78,6 @@ const Index = () => {
             </Stack>
           </Container>
         </Box>
-
-        {/* Footer Section */}
-        <Divider my={10} />
-        <Flex py={5} justifyContent="space-between" alignItems="center" flexWrap="wrap">
-          <Box>
-            <Image src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxWb2NhbCUyMFdpemFyZCUyMExvZ298ZW58MHx8fHwxNzEwOTQ3ODM0fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Vocal Wizard Logo" maxH="60px" ignoreFallback />
-          </Box>
-          <Stack direction="row" spacing={10} alignItems="center">
-            <Icon as={FaEnvelope} w={6} h={6} />
-            <Icon as={FaPhone} w={6} h={6} />
-            <Icon as={FaMapMarkerAlt} w={6} h={6} />
-          </Stack>
-        </Flex>
       </Container>
     </Box>
   );
