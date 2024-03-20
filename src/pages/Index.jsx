@@ -17,15 +17,15 @@ const Index = () => {
     <Box>
       <Container maxW="container.xl">
         {/* Hero Section */}
-        <Stack spacing={8} py={16} alignItems="center" textAlign="center" bg="black">
-          <Heading size="2xl" color="teal">
-            Vocal Wizard
+        <Stack spacing={12} py={24} alignItems="center" textAlign="center" bg="black">
+          <Heading size="3xl" color="teal" fontWeight="bold">
+            Unleash Your Creativity with Vocal Wizard
           </Heading>
-          <Text fontSize="xl" maxW="3xl" color="white">
-            Professional-grade audio mixing and mastering software designed to empower artists to achieve high-quality results independently.
+          <Text fontSize="2xl" maxW="4xl" color="white">
+            The ultimate audio mixing and mastering solution for independent artists. Achieve professional-grade results with ease and take your music to new heights.
           </Text>
-          <Button size="lg" colorScheme="blue" rightIcon={<FaMagic />}>
-            Discover the Magic
+          <Button size="lg" colorScheme="teal" rightIcon={<FaMagic />}>
+            Start Creating
           </Button>
         </Stack>
 
@@ -34,7 +34,7 @@ const Index = () => {
           <Heading size="xl" textAlign="center" mb={10} color="teal">
             Features
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={12} alignItems="center">
             <Feature icon={FaMicrophoneAlt} title="Vocal Isolation" description="Isolate vocals from any track with precision." />
             <Feature icon={FaMagic} title="Automatic Reverb Generator" description="Add depth to your tracks with auto-generated reverb effects." />
             <Feature icon={FaChartArea} title="Audio Analyzing" description="Get insights and visual feedback to fine-tune your music." />
@@ -46,38 +46,77 @@ const Index = () => {
         </Box>
 
         {/* About Section */}
-        <Box py={16} bg="black">
-          <Heading size="xl" textAlign="center" mb={10} color="teal">
-            About Vocal Wizard
-          </Heading>
-          <Text fontSize="lg" maxW="3xl" mx="auto" color="white">
-            At Vocal Wizard, we're committed to fostering creativity and artistic freedom in the music industry. Our cutting-edge software enables artists to independently achieve studio-quality audio mixes and masters, elevating their music to professional levels. Join the revolution and unleash your full potential with Vocal Wizard.
-          </Text>
+        <Box py={24} bg="black">
+          <Container maxW="container.lg">
+            <Heading size="2xl" textAlign="center" mb={12} color="teal">
+              Empowering Artists, Revolutionizing the Music Industry
+            </Heading>
+            <Text fontSize="xl" maxW="4xl" mx="auto" color="white" lineHeight="tall">
+              Vocal Wizard is more than just a software—it's a movement. We believe in the power of independent artists and their ability to shape the future of music. With our state-of-the-art audio processing technology, we provide the tools and resources needed to achieve professional-grade results without relying on expensive studios or equipment. Our mission is to democratize the music industry and give every artist the opportunity to shine. Join us in this journey and let your creativity soar with Vocal Wizard.
+            </Text>
+          </Container>
         </Box>
 
         {/* Contact Us Section */}
-        <Box py={16} bg="black">
+        <Box py={24} bg="black">
           <Container maxW="container.md">
-            <Heading size="xl" textAlign="center" mb={10} color="teal">
-              Contact Us
+            <Heading size="2xl" textAlign="center" mb={12} color="teal">
+              Get in Touch
             </Heading>
-            <Stack spacing={5} as="form">
-              <FormControl isRequired>
-                <FormLabel color="white">Name</FormLabel>
-                <Input placeholder="Your name" />
-              </FormControl>
-              <FormControl isRequired>
-                <FormLabel color="white">Email</FormLabel>
-                <Input placeholder="Your email" type="email" />
-              </FormControl>
-              <FormControl isRequired>
-                <FormLabel color="white">Message</FormLabel>
-                <Textarea placeholder="Your message" />
-              </FormControl>
-              <Button colorScheme="blue" type="submit">
-                Send Message
-              </Button>
-            </Stack>
+            <Box bg="gray.800" p={8} borderRadius="lg">
+              <Stack spacing={6} as="form">
+                <FormControl isRequired>
+                  <FormLabel color="white">Name</FormLabel>
+                  <Input placeholder="Your name" bg="gray.700" />
+                </FormControl>
+                <FormControl isRequired>
+                  <FormLabel color="white">Email</FormLabel>
+                  <Input placeholder="Your email" type="email" bg="gray.700" />
+                </FormControl>
+                <FormControl isRequired>
+                  <FormLabel color="white">Message</FormLabel>
+                  <Textarea placeholder="Your message" bg="gray.700" />
+                </FormControl>
+                <Button colorScheme="teal" type="submit" size="lg">
+                  Send Message
+                </Button>
+              </Stack>
+            </Box>
+          </Container>
+        </Box>
+
+        {}
+        <Box py={24} bg="black">
+          <Container maxW="container.lg">
+            <Heading size="2xl" textAlign="center" mb={12} color="teal">
+              What Our Users Say
+            </Heading>
+            <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={12}>
+              <Box bg="gray.800" p={8} borderRadius="lg">
+                <Text fontSize="xl" color="white" mb={4}>
+                  "Vocal Wizard has completely transformed my music production process. It's like having a professional studio at my fingertips!"
+                </Text>
+                <Text fontSize="lg" color="gray.400">
+                  - John Doe, Independent Artist
+                </Text>
+              </Box>
+              <Box bg="gray.800" p={8} borderRadius="lg">
+                <Text fontSize="xl" color="white" mb={4}>
+                  "The vocal isolation feature is a game-changer. It's never been easier to get clean, professional-sounding vocals."
+                </Text>
+                <Text fontSize="lg" color="gray.400">
+                  - Jane Smith, Singer-Songwriter
+                </Text>
+              </Box>
+              <Box bg="gray.800" p={8} borderRadius="lg">
+                <Text fontSize="xl" color="white" mb={4}>
+                  "I've tried countless audio software, but Vocal Wizard stands out with its intuitive interface and powerful features. Highly recommended!"
+                </Text>
+                <Text fontSize="lg" color="gray.400">
+                  - Mike Johnson, Music Producer
+                </Text>
+              </Box>
+            </SimpleGrid>
           </Container>
         </Box>
       </Container>
