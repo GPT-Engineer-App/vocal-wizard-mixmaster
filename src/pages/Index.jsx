@@ -84,41 +84,6 @@ const Index = () => {
             </Box>
           </Container>
         </Box>
-
-        {}
-        <Box py={24} bg="black">
-          <Container maxW="container.lg">
-            <Heading size="2xl" textAlign="center" mb={12} color="teal">
-              What Our Users Say
-            </Heading>
-            <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={12}>
-              <Box bg="gray.800" p={8} borderRadius="lg">
-                <Text fontSize="xl" color="white" mb={4}>
-                  "Vocal Wizard has completely transformed my music production process. It's like having a professional studio at my fingertips!"
-                </Text>
-                <Text fontSize="lg" color="gray.400">
-                  - John Doe, Independent Artist
-                </Text>
-              </Box>
-              <Box bg="gray.800" p={8} borderRadius="lg">
-                <Text fontSize="xl" color="white" mb={4}>
-                  "The vocal isolation feature is a game-changer. It's never been easier to get clean, professional-sounding vocals."
-                </Text>
-                <Text fontSize="lg" color="gray.400">
-                  - Jane Smith, Singer-Songwriter
-                </Text>
-              </Box>
-              <Box bg="gray.800" p={8} borderRadius="lg">
-                <Text fontSize="xl" color="white" mb={4}>
-                  "I've tried countless audio software, but Vocal Wizard stands out with its intuitive interface and powerful features. Highly recommended!"
-                </Text>
-                <Text fontSize="lg" color="gray.400">
-                  - Mike Johnson, Music Producer
-                </Text>
-              </Box>
-            </SimpleGrid>
-          </Container>
-        </Box>
       </Container>
     </Box>
   );
