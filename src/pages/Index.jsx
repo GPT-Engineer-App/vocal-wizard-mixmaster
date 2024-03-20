@@ -17,11 +17,11 @@ const Index = () => {
     <Box>
       <Container maxW="container.xl">
         {/* Hero Section */}
-        <Stack spacing={8} py={16} alignItems="center" textAlign="center" bg="gray.900">
-          <Heading size="2xl" color="white">
+        <Stack spacing={8} py={16} alignItems="center" textAlign="center" bg="black">
+          <Heading size="2xl" color="teal">
             Vocal Wizard
           </Heading>
-          <Text fontSize="xl" maxW="3xl" color="gray.400">
+          <Text fontSize="xl" maxW="3xl" color="white">
             Professional-grade audio mixing and mastering software designed to empower artists to achieve high-quality results independently.
           </Text>
           <Button size="lg" colorScheme="blue" rightIcon={<FaMagic />}>
@@ -30,8 +30,8 @@ const Index = () => {
         </Stack>
 
         {/* Features Section */}
-        <Box py={16} bg="gray.800">
-          <Heading size="xl" textAlign="center" mb={10} color="white">
+        <Box py={16} bg="black">
+          <Heading size="xl" textAlign="center" mb={10} color="teal">
             Features
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
@@ -46,19 +46,19 @@ const Index = () => {
         </Box>
 
         {/* About Section */}
-        <Box py={16} bg="gray.900">
-          <Heading size="xl" textAlign="center" mb={10} color="white">
+        <Box py={16} bg="black">
+          <Heading size="xl" textAlign="center" mb={10} color="teal">
             About Vocal Wizard
           </Heading>
-          <Text fontSize="lg" maxW="3xl" mx="auto" color="gray.400">
+          <Text fontSize="lg" maxW="3xl" mx="auto" color="white">
             At Vocal Wizard, we're committed to fostering creativity and artistic freedom in the music industry. Our cutting-edge software enables artists to independently achieve studio-quality audio mixes and masters, elevating their music to professional levels. Join the revolution and unleash your full potential with Vocal Wizard.
           </Text>
         </Box>
 
         {/* Contact Us Section */}
-        <Box py={16} bg="gray.800">
+        <Box py={16} bg="black">
           <Container maxW="container.md">
-            <Heading size="xl" textAlign="center" mb={10} color="white">
+            <Heading size="xl" textAlign="center" mb={10} color="teal">
               Contact Us
             </Heading>
             <Stack spacing={5} as="form">
