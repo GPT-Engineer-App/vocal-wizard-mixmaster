@@ -77,7 +77,7 @@ const Index = () => {
                   <FormLabel color="white">Message</FormLabel>
                   <Textarea placeholder="Your message" bg="gray.700" />
                 </FormControl>
-                <Button colorScheme="teal" type="submit" size="lg">
+                <Button colorScheme="#009688" type="submit" size="lg">
                   Send Message
                 </Button>
               </Stack>
