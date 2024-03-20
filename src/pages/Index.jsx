@@ -14,7 +14,7 @@ const Feature = ({ icon, title, description }) => {
 
 const Index = () => {
   return (
-    <Box>
+    <Box backgroundImage="url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')" backgroundSize="cover" backgroundPosition="center">
       <Container maxW="container.xl">
         {/* Hero Section */}
         <Stack spacing={12} py={24} alignItems="center" textAlign="center" bg="black">
